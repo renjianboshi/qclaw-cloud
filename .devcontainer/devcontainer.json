@@ -1,0 +1,13 @@
+{
+  "name": "qclaw-cloud",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "secrets": {
+    "DINGTALK_CLIENT_ID": {
+      "description": "DingTalk application Client ID"
+    },
+    "DINGTALK_CLIENT_SECRET": {
+      "description": "DingTalk application Client Secret"
+    }
+  }
+}
