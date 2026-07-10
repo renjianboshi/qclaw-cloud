@@ -1,6 +1,11 @@
 {
   "name": "qclaw-cloud",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/sshd:1": {
+      "version": "latest"
+    }
+  },
   "postCreateCommand": "bash .devcontainer/post-create.sh",
   "secrets": {
     "DINGTALK_CLIENT_ID": {
